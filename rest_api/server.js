@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(
     fileUpload({
         limits: {
-            fileSize: 625, //arround 500KB
+            fileSize: 500000, //arround 500KB
         },
         abortOnLimit: true,
     })
