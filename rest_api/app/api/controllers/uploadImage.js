@@ -7,7 +7,7 @@ module.exports= {
     // If no image submitted, exit
     if (!image) return res.sendStatus(400);
 
-    // If does not have image mime type prevent from uploading
+    // If does not have image type .png prevent from uploading
     if (/^image/.test(image.png)) return res.sendStatus(400);
 
     // Move the uploaded image to our upload folder
